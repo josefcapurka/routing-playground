@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "module": "ES6",
+        "outDir": "./src/compiled_js",
+        "rootDir": "./src",
+        "strict": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "baseUrl": "./",
+        "moduleResolution":"node",
+
+        "paths": {
+            "*": ["node_modules/*", "*"]
+        }
+    },
+    "include": [
+        "src/**/*.ts" // in src and all of its subfolders
+    ],
+    "exclude": [ // from compilation
+        "node_modules"
+    ]
+}
